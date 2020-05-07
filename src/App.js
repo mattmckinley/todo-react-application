@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import TaskItem from './TaskItem/TaskItem';
+import TaskInput from './TaskInput/TaskInput';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         To-Do List
       </header>
+      <TaskInput/>
       <TaskItem text="Task One" />
       <TaskItem text="Task Two" />
       <TaskItem text="Task Three" />
