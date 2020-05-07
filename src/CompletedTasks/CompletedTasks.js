@@ -1,21 +1,18 @@
 import React from 'react';
 
-import './TaskItem.css';
+import './CompletedTasks.css';
 
 
-function TaskItem(props) {
+function CompletedTasks(props) {
     return (
         <div className="container task-item">
             <div className="row">
                 <div className="col-12 col-md-10">
-                    <p className="task-item__text">
+                    <p className="Completed-tasks__text">
                         {props.text}
                     </p>
                 </div>
-                <div className="col-6 col-md-1 task-item__button">
-                    <button type="button" class="btn btn-outline-success">Done</button>
-                </div>
-                <div className="col-6 col-md-1 task-item__button">
+                <div className="col-12 col-md-2 completed-tasks__button">
                     <button type="button" class="btn btn-outline-danger">Delete</button>
                 </div>
             </div>
@@ -23,4 +20,4 @@ function TaskItem(props) {
     );
 }
 
-export default TaskItem;
+export default CompletedTasks;
