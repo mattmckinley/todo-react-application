@@ -11,7 +11,7 @@ function TaskInput() {
                 <input class="form-control" type="text" placeholder="Add something to your list..."/>
                 </div>
                 <div className="col-12 col-md-2 task-input__button">
-                <button type="button" class="btn btn-outline-success">Add</button>
+                <button type="button" class="btn btn-success task-input__add-button">Add</button>
                 </div>
             </div>
         </div>
