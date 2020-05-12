@@ -4,6 +4,7 @@ import TaskItem from './TaskItem/TaskItem';
 import TaskInput from './TaskInput/TaskInput';
 import IncompleteRow from './IncompleteRow/IncompleteRow';
 import CompleteRow from './CompleteRow/CompleteRow';
+import Header from './Header/Header'
 
 
 function App() {
@@ -22,9 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>TO-DO LIST</h1>
-      </header>
+      <Header />
       <TaskInput />
       <IncompleteRow count={activeTasks.length} />
       <ul className="task-list">
