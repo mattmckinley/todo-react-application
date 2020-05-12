@@ -10,10 +10,26 @@
     padding: 10px 15px 0px 15px;
 }
 
+.task-item__date-all {
+    padding: 10px 15px 0px 15px;
+}
+
+.task-item__date {
+    padding: 5px 0px 5px 0px;
+    background-color: #EDE7E3;
+    border: none;
+    border-radius: 4px;
+    margin: 1px;
+}
+
 .task-item__done-button {
     float: right;
 }
 
 .task-item__delete-button {
     float: left;
+}
+
+.task-item__completed .task-item__text {
+    text-decoration: line-through;
 }

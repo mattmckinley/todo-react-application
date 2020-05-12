@@ -5,17 +5,22 @@ import './TaskItem.css';
 
 function TaskItem(props) {
     return (
-        <div className="container task-item">
+        <div className={`container ${ props.completed ? "task-item__completed" : "task-item" }`}>
             <div className="row">
-                <div className="col-12 col-md-10 task-item__all">
+                <div className="col-12 col-md-8 task-item__all">
                     <p className="task-item__text">
                         {props.text}
                     </p>
                 </div>
+                <div className="col-12 col-md-2 task-item__date-all">
+                    <p className="task-item__date">
+                        Due: {props.dueDate}
+                    </p>
+                </div>
                 <div className="col-6 col-md-1 task-item__button">
-                    <button type="button" class="btn btn-success task-item__done-button">
+                    {!props.completed && <button type="button" class="btn btn-success task-item__done-button">
                         <span class="material-icons">done</span>
-                    </button>
+                    </button>}
                 </div>
                 <div className="col-6 col-md-1 task-item__button">
                     <button type="button" class="btn btn-danger task-item__delete-button">
