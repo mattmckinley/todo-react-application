@@ -27,11 +27,11 @@ function App() {
       <TaskInput />
       <IncompleteRow count={activeTasks.length} />
       <ul className="task-list">
-        {activeTasks.map(task => <TaskItem text={task.text} completed={task.completed} dueDate={task.dueDate} />)}
+        {activeTasks.map(task => <TaskItem key={task.text} text={task.text} completed={task.completed} dueDate={task.dueDate} />)}
       </ul>
       <CompleteRow count={completedTasks.length} />
       <ul>
-        {completedTasks.map(task => <TaskItem text={task.text} completed={task.completed} dueDate={task.dueDate} />)}
+        {completedTasks.map(task => <TaskItem key={task.text} text={task.text} completed={task.completed} dueDate={task.dueDate} />)}
       </ul>
     </div>
   );

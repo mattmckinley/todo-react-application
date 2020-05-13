@@ -1,3 +1,7 @@
 .task-input__add-button {
     float: left;
 }
+
+.task-input {
+    float: center;
+}
