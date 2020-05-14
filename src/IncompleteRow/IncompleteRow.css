@@ -1,5 +1,15 @@
 .incomplete-row {
     color: #16697A;
-    padding: 25px 0px 5px 5px;
+    padding: 20px 0px 0px 5px;
     text-align: left;
 }
+
+h3 {
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+    .incomplete-row {
+        text-align: center;
+    }
+   }

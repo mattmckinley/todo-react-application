@@ -33,3 +33,16 @@
 .task-item__completed .task-item__text {
     text-decoration: line-through;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .task-item__all {
+        padding: 10px 10px 5px 10px;
+        
+    }
+    
+    .task-item__date-all {
+        padding: 10px 10px 5px 10px;
+    }
+    
+   }

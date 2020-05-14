@@ -30,7 +30,7 @@ function App() {
         {activeTasks.map(task => <TaskItem key={task.text} text={task.text} completed={task.completed} dueDate={task.dueDate} />)}
       </ul>
       <CompleteRow count={completedTasks.length} />
-      <ul>
+      <ul className="task-list">
         {completedTasks.map(task => <TaskItem key={task.text} text={task.text} completed={task.completed} dueDate={task.dueDate} />)}
       </ul>
     </div>

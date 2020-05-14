@@ -18,13 +18,13 @@ function TaskItem(props) {
                     </p>
                 </div>
                 <div className="col-6 col-md-1 task-item__button">
-                    {!props.completed && <button type="button" class="btn btn-success task-item__done-button">
-                        <span class="material-icons">done</span>
+                    {!props.completed && <button type="button" className="btn btn-success task-item__done-button">
+                        <span className="material-icons">done</span>
                     </button>}
                 </div>
                 <div className="col-6 col-md-1 task-item__button">
-                    <button type="button" class="btn btn-danger task-item__delete-button">
-                        <span class="material-icons">delete</span>
+                    <button type="button" className="btn btn-danger task-item__delete-button">
+                        <span className="material-icons">delete</span>
                     </button>
                 </div>
             </div>

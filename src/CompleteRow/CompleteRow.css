@@ -2,5 +2,10 @@
     color: #16697A;
     padding: 25px 5px 5px 5px;
     text-align: left;
-
 }
+
+@media only screen and (max-width: 768px) {
+    .complete-row {
+        text-align: center;
+    }
+   }

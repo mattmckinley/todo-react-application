@@ -1,7 +1,19 @@
 .task-input__add-button {
-    float: left;
+    float: center;
 }
 
 .task-input {
     float: center;
 }
+
+.task-input__text-box {
+    padding: 0px 10px 0px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .task-input__text-box {
+        padding: 10px 10px 5px 10px;
+    }
+    
+    
+   }

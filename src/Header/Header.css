@@ -3,6 +3,8 @@ h1 {
     font-weight: 800;
     font-size: 4em;
     color: #16697A;
+    float: center;
+    padding: 10px 240px 0px 0px;
     
   }
 
@@ -11,5 +13,29 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 25px 0px 15px 0px;
+    padding: 20px 10px 5px 10px;
   }
+
+  .logo-svg {
+    width: 90px;
+    height: 90px;
+    padding: 10px 10px 10px 25px;
+    float: left;
+    
+   }
+
+   @media only screen and (max-width: 768px) {
+    h1 {
+      font-family: Vibur;
+      font-weight: 800;
+      font-size: 4em;
+      color: #16697A;
+      float: center;
+      padding: 0px 30px 0px 0px;
+     }
+
+     .logo-svg {
+      visibility: hidden;
+      
+     }
+   }
