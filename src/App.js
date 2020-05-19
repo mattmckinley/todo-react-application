@@ -37,10 +37,21 @@ function App() {
     setTasks(updatedTasks);
   }
 
+  function addTask(text, dueDate) {
+    const newTask = {
+      text: text, 
+      completed: false, 
+      dueDate: dueDate, 
+      id: uuidv4()
+    }
+    const updatedTasks = [ ...tasks, newTask ]
+    setTasks(updatedTasks);
+  }
+
   return (
     <div className="App">
       <Header />
-      <TaskInput />
+      <TaskInput addTask={addTask} />
       <IncompleteRow count={activeTasks.length} />
       <ul className="task-list">
         {activeTasks.map(task => {
