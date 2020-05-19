@@ -1,5 +1,5 @@
 .task-input__add-button {
-    float: center;
+    float: left;
 }
 
 .task-input {
@@ -13,6 +13,14 @@
 @media only screen and (max-width: 768px) {
     .task-input__text-box {
         padding: 10px 10px 5px 10px;
+    }
+
+    .task-input__date-box {
+        padding: 10px 10px 5px 10px;
+    }
+
+    .task-input__add-button {
+        float: none;
     }
     
     
