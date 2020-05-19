@@ -4,6 +4,7 @@
 
 .task-input {
     float: center;
+    padding: 10px 20px 25px 20px;
 }
 
 .task-input__text-box {

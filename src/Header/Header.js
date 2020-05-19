@@ -8,7 +8,7 @@ import './Header.css';
 function Header() {
     return (
         <div className="container">
-            <div className="row">
+            <div className="row header-row__all">
                 <div className="col-1 col-md-2 header">
                     <img src={pencilIcon} alt="pencil logo" className="logo-svg" />
                 </div>

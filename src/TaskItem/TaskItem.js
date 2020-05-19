@@ -12,7 +12,7 @@ function TaskItem(props) {
     function handleCompleteClick() {
         props.completeTask(props.id);
     }
-    
+
     return (
         <div className={`container ${props.completed ? "task-item__completed" : "task-item"}`}>
             <div className="row">
