@@ -5,16 +5,17 @@ import TaskInput from './TaskInput/TaskInput';
 import IncompleteRow from './IncompleteRow/IncompleteRow';
 import CompleteRow from './CompleteRow/CompleteRow';
 import Header from './Header/Header'
+import { v4 as uuidv4 } from 'uuid';
 
 
 function App() {
 
   const [tasks, setTasks] = useState([
-    { text: "Feed the cat", completed: false, dueDate: "2020-05-20", id: "001" },
-    { text: "Go for a walk", completed: false, dueDate: "2020-06-10", id: "002" },
-    { text: "Food shopping", completed: true, dueDate: "2020-05-24", id: "003" },
-    { text: "Combine bootstrap with my react to do app", completed: true, dueDate: "2020-05-19", id: "004" },
-    { text: "CSS styling", completed: false, dueDate: "2020-06-4", id: "005" }
+    { text: "Feed the cat", completed: false, dueDate: "2020-05-20", id: uuidv4() },
+    { text: "Go for a walk", completed: false, dueDate: "2020-06-10", id: uuidv4() },
+    { text: "Food shopping", completed: true, dueDate: "2020-05-24", id: uuidv4() },
+    { text: "Combine bootstrap with my react to do app", completed: true, dueDate: "2020-05-19", id: uuidv4() },
+    { text: "CSS styling", completed: false, dueDate: "2020-06-4", id: uuidv4() }
   ]);
 
   const activeTasks = tasks.filter(task => !task.completed);
