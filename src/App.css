@@ -1,9 +1,8 @@
 .App {
   text-align: center;
   background-color: #82C0CC;
-  padding: 0px 0px 100px 0px;
-  background-repeat: inherit;
-  
+  height: 100%;
+  width: 100%;
 }
 
 .task-list {
