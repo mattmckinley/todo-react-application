@@ -34,6 +34,11 @@
     text-decoration: line-through;
 }
 
+p {
+    color: #16697a;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
 
 @media only screen and (max-width: 768px) {
     .task-item__all {
