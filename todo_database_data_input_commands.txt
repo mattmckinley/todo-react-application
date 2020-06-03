@@ -1,3 +1,63 @@
 To-Do List Database Data Input commands to be used in MYSQL
 ___
 
+SHOW DATABASES;
+
+USE todos;
+
+SHOW TABLES;
+
+DESCRIBE user;
+
+INSERT INTO user (userId, username) VALUES ("", "mattmck123");
+INSERT INTO user (userId, username) VALUES ("", "roobzzz");
+INSERT INTO user (userId, username) VALUES ("", "roxstafford");
+
+SELECT * FROM user;
+
+DESCRIBE task;
+
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "false", "2020-06-23", "Take cat to the vets", "1");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "true", "2020-07-15", "Wash the car", "1");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "false", "2020-06-18", "Meeting with nursery", "1");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "false", "2020-06-6", "Food shopping", "1");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "true", "2020-06-4", "meeting with work", "2");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "true", "2020-06-25", "picnic in the park", "2");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "false", "2020-06-23", "work drinks", "2");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "true", "2020-07-11", "doctors appointment", "2");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "false", "2020-06-29", "car MOT due", "3");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "true", "2020-06-6", "Return parcel at post office", "3");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "false", "2020-06-2", "date night", "3");
+INSERT INTO task (taskId, completed, date, text, userId) VALUES ("", "true", "2020-08-16", "dentist appointment", "3");
+
+SELECT * FROM task;
+
+___
+
+USING THE DATA
+___
+
+(shows all task that have been completed)
+SELECT * FROM task WHERE completed="true"; 
+
+(shows all tasks by specific user)
+SELECT * FROM task WHERE userId=1; 
+
+(updates all tasks to completed for user 1)
+UPDATE task SET completed="true" WHERE userId=1; 
+
+(updates task table to add 3 days to date for user 1)
+UPDATE task 
+SET date = DATE_ADD(date , INTERVAL 3 DAY)
+WHERE userId=1;
+
+(orders task table in ascending date order)
+SELECT * FROM task ORDER BY date ASC;
+
+(orders task table in descending date order)
+SELECT * FROM task ORDER BY date DESC;
+
+(adds user table to task table)
+SELECT * FROM user JOIN task ON user.userId=task.userId;
+
+
