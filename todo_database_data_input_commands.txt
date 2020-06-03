@@ -60,5 +60,3 @@ SELECT * FROM task ORDER BY date DESC;
 (adds user table to task table)
 SELECT * FROM user JOIN task ON user.userId=task.userId;
 
-mysqldump --column-statistics=0 -u "admin" -p -h "tr-course-rds.c9d9q6eradqx.eu-west-2.rds.amazonaws.com" "todos"
-  > database.sql
