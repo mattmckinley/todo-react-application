@@ -1,0 +1,30 @@
+To-Do List Database Creation Commands to be used in MYSQL
+___
+
+CREATE DATABASE todos;
+
+SHOW DATABASES;
+
+USE todos;
+
+SHOW TABLES;
+
+CREATE TABLE user (
+	userId INT NOT NULL AUTO_INCREMENT, 
+	username VARCHAR(255) NOT NULL, 
+	PRIMARY KEY (userId)
+);
+
+DESCRIBE user;
+
+CREATE TABLE task (
+	taskId INT NOT NULL AUTO_INCREMENT, 
+	completed VARCHAR(10), 
+	date DATE NOT NULL, 
+	text VARCHAR(255), 
+	userId INT NOT NULL, 
+	PRIMARY KEY (taskId), 
+	FOREIGN KEY (userId) REFERENCES user(userId)
+);
+
+DESCRIBE task;
