@@ -37,14 +37,33 @@ function App() {
       })
   };
 
-  function completeTask(id) {
+  // function completeTask(id) {
+  //   const updatedTasks = tasks.map(task => {
+  //     if (task.taskId === id) {
+  //       task.completed = true;
+  //     }
+  //     return task;
+  //   })
+  //   setTasks(updatedTasks);
+  // };
+
+  function completeTask(taskId) {
     const updatedTasks = tasks.map(task => {
-      if (task.taskId === id) {
+      if (task.taskId === taskId) {
         task.completed = true;
       }
       return task;
     })
-    setTasks(updatedTasks);
+    const updatedTask = tasks.find(task => task.taskId === taskId);
+
+    axios
+      .put(`https://kia9m4w721.execute-api.eu-west-1.amazonaws.com/dev/tasks/${taskId}`, updatedTask)
+      .then(response => {
+        setTasks(updatedTasks);
+      })
+      .catch(error => {
+        console.log("Error fetching data", error);
+      })
   };
 
   function addTask(text, date) {
