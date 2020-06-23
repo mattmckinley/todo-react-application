@@ -60,3 +60,6 @@ SELECT * FROM task ORDER BY date DESC;
 (adds user table to task table)
 SELECT * FROM user JOIN task ON user.userId=task.userId;
 
+Changing field type in table.
+ALTER TABLE task MODIFY completed BOOL NOT NULL;
+
