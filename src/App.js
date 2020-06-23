@@ -37,16 +37,6 @@ function App() {
       })
   };
 
-  // function completeTask(id) {
-  //   const updatedTasks = tasks.map(task => {
-  //     if (task.taskId === id) {
-  //       task.completed = true;
-  //     }
-  //     return task;
-  //   })
-  //   setTasks(updatedTasks);
-  // };
-
   function completeTask(taskId) {
     const updatedTasks = tasks.map(task => {
       if (task.taskId === taskId) {
