@@ -1,11 +1,12 @@
 .incomplete-row {
-    color: #16697A;
+    color: #28468F;
     padding: 25px 0px 0px 5px;
     text-align: left;
 }
 
 h3 {
     font-weight: 800;
+    color: #28468F
 }
 
 @media only screen and (max-width: 768px) {

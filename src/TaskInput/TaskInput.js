@@ -7,7 +7,6 @@ function TaskInput(props) {
 
     const [text, setText] = useState("");
 
-    //Look into adding momentjs to date below.
     const [dueDate, setDueDate] = useState("")
 
     function handleTextChange(event) {

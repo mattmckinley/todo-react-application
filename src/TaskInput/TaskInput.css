@@ -2,26 +2,40 @@
     float: left;
 }
 
+
+
 .task-input {
     float: center;
     padding: 10px 20px 25px 20px;
 }
 
 .task-input__text-box {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.task-input__date-box {
+    padding: 0px 0px 0px 0px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 768px) {
     .task-input__text-box {
-        padding: 10px 10px 5px 10px;
+        padding: 0px 0px 0px 0px;
     }
 
     .task-input__date-box {
-        padding: 10px 10px 5px 10px;
+        padding: 0px 0px 0px 0px;
     }
 
     .task-input__add-button {
         float: none;
+    }
+
+    .task-input__button {
+        padding-top: 10px;
     }
     
     
