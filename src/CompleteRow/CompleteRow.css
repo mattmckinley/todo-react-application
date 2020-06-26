@@ -5,8 +5,7 @@
 }
 
 h3 {
-    font-family: Vibur;
-    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
     font-weight: 800;
     color: #28468F;
 }
@@ -14,5 +13,7 @@ h3 {
 @media only screen and (max-width: 768px) {
     .complete-row {
         text-align: center;
+        padding: 0px 0px 0px 5px;
     }
+
    }

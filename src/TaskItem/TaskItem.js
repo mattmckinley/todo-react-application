@@ -30,7 +30,7 @@ function TaskItem(props) {
                     {!props.completed &&
                         <button
                             type="button"
-                            className="btn btn-success task-item__done-button"
+                            className="btn btn-primary task-item__done-button"
                             onClick={handleCompleteClick}>
                             <span className="material-icons">done</span>
                         </button>}

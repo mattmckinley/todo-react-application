@@ -4,7 +4,7 @@
     border: none;
     border-radius: 4px;
     margin: 1px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 .task-item__all {
@@ -21,15 +21,23 @@
     border: none;
     border-radius: 4px;
     margin: 1px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-danger {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+    height: 35px;
+    padding: 5px 15px 0px 15px;
 }
 
 .task-item__done-button {
+    height: 35px;
+    padding: 5px 15px 0px 15px;
     float: right;
 }
 
-.task-item__delete-button {
-    float: left;
+.task-item__button {
+    padding: 10px 15px 0px 15px
 }
 
 .task-item__completed .task-item__text {
@@ -39,17 +47,31 @@
 p {
     color: #28468F;
     font-family: Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+}
+
+p.task-item__date {
+    color: #28468F;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 768px) {
     .task-item__all {
-        padding: 10px 10px 5px 10px;
-        
+        padding: 0px 10px 0px 10px;
     }
     
     .task-item__date-all {
         padding: 10px 10px 5px 10px;
     }
+
+    .task-item__button {
+        padding: 0px 15px 20px 15px
+    }
+
+    .btn-danger {
+        float: left;
+    }
+
     
    }

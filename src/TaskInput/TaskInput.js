@@ -41,7 +41,7 @@ function TaskInput(props) {
                 <div className="col-12 col-md-2 task-input__button">
                     <button
                         type="button"
-                        className="btn btn-success task-input__add-button"
+                        className="btn btn-primary"
                         onClick={handleAddTaskClick}
                     >Add</button>
                 </div>

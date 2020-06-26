@@ -12,5 +12,6 @@ h3 {
 @media only screen and (max-width: 768px) {
     .incomplete-row {
         text-align: center;
+        padding: 0px 0px 0px 5px;
     }
    }
